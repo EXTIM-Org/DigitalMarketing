@@ -3,10 +3,11 @@ import { prisma } from "@/lib/prisma";
 import { getServerSession } from "next-auth/next";
 import { authOptions } from "../../auth/[...nextauth]/route";
 
-export async function GET(req: NextRequest, { params }: { params: { id: string } }) {
+export async function GET(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
+    const { id } = await params;
     const item = await prisma.portfolio.findUnique({
-      where: { id: params.id },
+      where: { id },
     });
     if (!item) return NextResponse.json({ error: "Portfolio item not found" }, { status: 404 });
     return NextResponse.json(item);
@@ -15,16 +16,17 @@ export async function GET(req: NextRequest, { params }: { params: { id: string }
   }
 }
 
-export async function PUT(req: NextRequest, { params }: { params: { id: string } }) {
+export async function PUT(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
     const session = await getServerSession(authOptions);
     if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
 
     const body = await req.json();
     const { title, category, description, image, link } = body;
+    const { id } = await params;
 
     const item = await prisma.portfolio.update({
-      where: { id: params.id },
+      where: { id },
       data: { title, category, description, image, link },
     });
     return NextResponse.json(item);
@@ -33,13 +35,14 @@ export async function PUT(req: NextRequest, { params }: { params: { id: string }
   }
 }
 
-export async function DELETE(req: NextRequest, { params }: { params: { id: string } }) {
+export async function DELETE(req: NextRequest, { params }: { params: Promise<{ id: string }> }) {
   try {
     const session = await getServerSession(authOptions);
     if (!session) return NextResponse.json({ error: "Unauthorized" }, { status: 401 });
+    const { id } = await params;
 
     await prisma.portfolio.delete({
-      where: { id: params.id },
+      where: { id },
     });
     return NextResponse.json({ message: "Portfolio item deleted" });
   } catch (error) {
