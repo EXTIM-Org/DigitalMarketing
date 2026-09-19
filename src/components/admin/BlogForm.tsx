@@ -69,11 +69,12 @@ export default function BlogForm() {
         router.push("/admin/blog");
         router.refresh();
       } else {
-        alert("خطا در ذخیره مقاله");
+        const errorData = await res.json().catch(() => ({}));
+        alert(`خطا در ذخیره مقاله: ${errorData.error || res.statusText}`);
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
-      alert("خطا در ارتباط با سرور");
+      alert(`خطا در ارتباط با سرور: ${error.message}`);
     } finally {
       setLoading(false);
     }

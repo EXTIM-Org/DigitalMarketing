@@ -56,11 +56,12 @@ export default function PortfolioForm() {
         router.push("/admin/portfolio");
         router.refresh();
       } else {
-        alert("خطا در ذخیره نمونه‌کار");
+        const errorData = await res.json().catch(() => ({}));
+        alert(`خطا در ذخیره نمونه‌کار: ${errorData.error || res.statusText}`);
       }
-    } catch (error) {
+    } catch (error: any) {
       console.error(error);
-      alert("خطا در ارتباط با سرور");
+      alert(`خطا در ارتباط با سرور: ${error.message}`);
     } finally {
       setLoading(false);
     }
