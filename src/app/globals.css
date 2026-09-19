@@ -229,3 +229,66 @@ a {
   cursor: pointer;
   z-index: 10;
 }
+/* Service Chips */
+.service-chip {
+  display: inline-block;
+  padding: 4px 12px;
+  background: rgba(var(--primary), 0.1);
+  border: 1px solid rgba(var(--primary), 0.2);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--text-color);
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.service-chip:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(var(--primary), 0.3);
+}
+
+/* Services Dropdown Navbar */
+.nav-dropdown-wrapper {
+  position: relative;
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 1rem;
+  width: 250px;
+  background: var(--card-bg);
+  backdrop-filter: var(--nav-blur);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: var(--glass-shadow);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  z-index: 100;
+}
+
+.nav-dropdown-wrapper:hover .nav-dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.nav-dropdown-item {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: var(--text-color);
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.nav-dropdown-item:hover {
+  background-color: rgba(100, 100, 100, 0.1);
+  color: var(--primary);
+}

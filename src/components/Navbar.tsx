@@ -38,6 +38,14 @@ export default function Navbar() {
     { href: "/about", label: "درباره ما" },
   ];
 
+  const serviceLinks = [
+    { href: "/services/web-design", label: "طراحی وب‌سایت" },
+    { href: "/services/software-development", label: "توسعه نرم‌افزار" },
+    { href: "/services/seo", label: "سئو و بهینه‌سازی" },
+    { href: "/services/smart-bots", label: "ربات‌های هوشمند" },
+    { href: "/services/ai-assistants", label: "دستیارهای هوش مصنوعی" },
+  ];
+
   return (
     <>
       <nav className="glass-nav" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 100, padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -51,6 +59,21 @@ export default function Navbar() {
 
         {/* Desktop Links (Hidden on Mobile) */}
         <div className="desktop-menu" style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
+          
+          <div className="nav-dropdown-wrapper" style={{ padding: '1rem 0' }}>
+            <span style={{ fontWeight: 500, opacity: 0.8, cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+              خدمات
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
+            </span>
+            <div className="nav-dropdown-menu">
+              {serviceLinks.map((link) => (
+                <Link key={link.href} href={link.href} className="nav-dropdown-item" onClick={() => setIsOpen(false)}>
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+          </div>
+
           {navLinks.map((link) => (
             <Link key={link.href} href={link.href} className="nav-link" style={{ fontWeight: 500, opacity: 0.8, textDecoration: 'none', color: 'inherit', transition: 'opacity 0.2s' }}>
               {link.label}
@@ -118,8 +141,34 @@ export default function Navbar() {
                 visible: { transition: { staggerChildren: 0.1 } },
                 hidden: {}
               }}
-              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '2rem' }}
+              style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', width: '100%', maxWidth: '300px' }}
             >
+              
+              {/* Services Section on Mobile */}
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, y: 20 },
+                  visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
+                }}
+                style={{ width: '100%', textAlign: 'center', marginBottom: '1rem' }}
+              >
+                <div style={{ fontSize: '1.5rem', fontWeight: 700, color: 'var(--text-muted)', marginBottom: '1rem' }}>خدمات ما</div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                  {serviceLinks.map((link) => (
+                    <Link 
+                      key={link.href}
+                      href={link.href} 
+                      onClick={() => setIsOpen(false)}
+                      style={{ fontSize: '1.2rem', textDecoration: 'none', color: 'var(--primary)' }}
+                    >
+                      {link.label}
+                    </Link>
+                  ))}
+                </div>
+              </motion.div>
+
+              <div style={{ width: '100%', height: '1px', background: 'var(--card-border)', margin: '0.5rem 0' }} />
+
               {navLinks.map((link) => (
                 <motion.div
                   key={link.href}
@@ -132,13 +181,11 @@ export default function Navbar() {
                     href={link.href} 
                     onClick={() => setIsOpen(false)}
                     style={{ 
-                      fontSize: '2rem', 
+                      fontSize: '1.5rem', 
                       fontWeight: 700, 
                       textDecoration: 'none', 
                       color: 'var(--text-color)',
                       letterSpacing: '-0.02em',
-                      position: 'relative',
-                      display: 'inline-block'
                     }}
                   >
                     {link.label}

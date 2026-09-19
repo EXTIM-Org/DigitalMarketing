@@ -50,59 +50,107 @@ export default function Home() {
 
         <div style={{ 
           display: 'grid', 
-          gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', 
+          gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', 
           gap: '2rem' 
         }}>
-          {/* Card 1 */}
+          {/* Card 1: Web Design */}
           <SlideUp delay={0.1}>
-            <Link href="/services/web-design" className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', transition: 'transform 0.3s ease', cursor: 'pointer', textDecoration: 'none', height: '100%' }}>
+            <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '100%' }}>
               <div style={{ color: 'var(--primary)', marginBottom: '1.5rem' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
               </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--text-color)' }}>طراحی وب‌سایت</h3>
-              <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, flexGrow: 1 }}>
-                خلق وب‌سایت‌های خیره‌کننده، واکنش‌گرا و کاربرمحور که مخاطبان شما را مجذوب و درگیر می‌کند.
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--text-color)' }}>
+                <Link href="/services/web-design" style={{textDecoration: 'none', color: 'inherit'}}>طراحی وب‌سایت</Link>
+              </h3>
+              <p style={{ color: 'var(--text-muted)', lineHeight: 1.6, flexGrow: 1, marginBottom: '1.5rem', fontSize: '0.95rem' }}>
+                خلق وب‌سایت‌های خیره‌کننده، واکنش‌گرا و کاربرمحور که مخاطبان شما را مجذوب می‌کند.
               </p>
-            </Link>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <Link href="/services/web-design/corporate" className="service-chip">سایت شرکتی</Link>
+                <Link href="/services/web-design/ecommerce" className="service-chip">فروشگاه اینترنتی</Link>
+              </div>
+            </div>
           </SlideUp>
 
-          {/* Card 2 */}
+          {/* Card 2: Software Development */}
           <SlideUp delay={0.2}>
-            <Link href="/services/software" className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', transition: 'transform 0.3s ease', cursor: 'pointer', textDecoration: 'none', height: '100%' }}>
+            <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '100%' }}>
               <div style={{ color: 'var(--accent)', marginBottom: '1.5rem' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
               </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--text-color)' }}>توسعه نرم‌افزار</h3>
-              <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, flexGrow: 1 }}>
-                ساخت نرم‌افزارهای سفارشی، اپلیکیشن‌ها و پلتفرم‌های دیجیتال قدرتمند متناسب با نیازهای منحصربه‌فرد تجارت شما.
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--text-color)' }}>
+                <Link href="/services/software-development" style={{textDecoration: 'none', color: 'inherit'}}>توسعه نرم‌افزار</Link>
+              </h3>
+              <p style={{ color: 'var(--text-muted)', lineHeight: 1.6, flexGrow: 1, marginBottom: '1.5rem', fontSize: '0.95rem' }}>
+                ساخت پلتفرم‌های دیجیتال قدرتمند متناسب با نیازهای منحصربه‌فرد تجارت شما.
               </p>
-            </Link>
-          </SlideUp>
-
-          {/* Card 3 */}
-          <SlideUp delay={0.3}>
-            <Link href="/services/automation" className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', transition: 'transform 0.3s ease', cursor: 'pointer', textDecoration: 'none', height: '100%' }}>
-              <div style={{ color: '#0ea5e9', marginBottom: '1.5rem' }}>
-                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <Link href="/services/software-development/custom-software" className="service-chip">نرم‌افزار اختصاصی</Link>
+                <Link href="/services/software-development/web-applications" className="service-chip">وب اپلیکیشن (PWA/SaaS)</Link>
+                <Link href="/services/software-development/mobile-apps" className="service-chip">اپلیکیشن موبایل</Link>
+                <Link href="/services/software-development/api-integration" className="service-chip">طراحی API</Link>
               </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--text-color)' }}>ربات‌های اتوماسیون</h3>
-              <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, flexGrow: 1 }}>
-                ساده‌سازی عملیات، افزایش بهره‌وری و خودکارسازی وظایف با ربات‌های سفارشی و جریان‌های کاری هوش مصنوعی.
-              </p>
-            </Link>
+            </div>
           </SlideUp>
 
-          {/* Card 4 */}
-          <SlideUp delay={0.4}>
-            <Link href="/services/seo" className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', transition: 'transform 0.3s ease', cursor: 'pointer', textDecoration: 'none', height: '100%' }}>
+          {/* Card 3: SEO */}
+          <SlideUp delay={0.3}>
+            <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '100%' }}>
               <div style={{ color: '#10b981', marginBottom: '1.5rem' }}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line><polyline points="11 8 11 11 14 14"></polyline></svg>
               </div>
-              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--text-color)' }}>سئو و بهینه‌سازی</h3>
-              <p style={{ color: 'var(--text-muted)', lineHeight: 1.5, flexGrow: 1 }}>
-                بهینه‌سازی حضور آنلاین شما، هدایت ترافیک ارگانیک و ارتقای رتبه‌بندی موتورهای جستجو برای دسترسی بهتر به مخاطبان.
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--text-color)' }}>
+                <Link href="/services/seo" style={{textDecoration: 'none', color: 'inherit'}}>سئو و بهینه‌سازی</Link>
+              </h3>
+              <p style={{ color: 'var(--text-muted)', lineHeight: 1.6, flexGrow: 1, marginBottom: '1.5rem', fontSize: '0.95rem' }}>
+                بهینه‌سازی حضور آنلاین شما و ارتقای رتبه‌بندی موتورهای جستجو.
               </p>
-            </Link>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <Link href="/services/seo/technical-seo" className="service-chip">سئو تکنیکال</Link>
+                <Link href="/services/seo/content-seo" className="service-chip">سئو محتوا</Link>
+                <Link href="/services/seo/local-seo" className="service-chip">سئو محلی</Link>
+              </div>
+            </div>
+          </SlideUp>
+
+          {/* Card 4: Smart Bots */}
+          <SlideUp delay={0.4}>
+            <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '100%' }}>
+              <div style={{ color: '#0ea5e9', marginBottom: '1.5rem' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"></rect><circle cx="12" cy="5" r="2"></circle><path d="M12 7v4"></path><line x1="8" y1="16" x2="8" y2="16"></line><line x1="16" y1="16" x2="16" y2="16"></line></svg>
+              </div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--text-color)' }}>
+                <Link href="/services/smart-bots" style={{textDecoration: 'none', color: 'inherit'}}>ربات‌های هوشمند</Link>
+              </h3>
+              <p style={{ color: 'var(--text-muted)', lineHeight: 1.6, flexGrow: 1, marginBottom: '1.5rem', fontSize: '0.95rem' }}>
+                ساده‌سازی عملیات، افزایش بهره‌وری و خودکارسازی وظایف تجاری شما.
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <Link href="/services/smart-bots/telegram-bot" className="service-chip">ربات تلگرام</Link>
+                <Link href="/services/smart-bots/instagram-automation" className="service-chip">اتوماسیون اینستاگرام</Link>
+                <Link href="/services/smart-bots/business-process-automation" className="service-chip">اتوماسیون فرآیندها (RPA)</Link>
+              </div>
+            </div>
+          </SlideUp>
+
+          {/* Card 5: AI Assistants */}
+          <SlideUp delay={0.5}>
+            <div className="glass-panel" style={{ padding: '2rem', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', height: '100%' }}>
+              <div style={{ color: '#f59e0b', marginBottom: '1.5rem' }}>
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M12 16v-4"></path><path d="M12 8h.01"></path><path d="M16 12h.01"></path><path d="M8 12h.01"></path></svg>
+              </div>
+              <h3 style={{ fontSize: '1.25rem', fontWeight: 600, marginBottom: '1rem', color: 'var(--text-color)' }}>
+                <Link href="/services/ai-assistants" style={{textDecoration: 'none', color: 'inherit'}}>دستیارهای هوش مصنوعی</Link>
+              </h3>
+              <p style={{ color: 'var(--text-muted)', lineHeight: 1.6, flexGrow: 1, marginBottom: '1.5rem', fontSize: '0.95rem' }}>
+                توسعه و استقرار راهکارهای هوش مصنوعی بر روی دیتای اختصاصی کسب‌وکار شما.
+              </p>
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                <Link href="/services/ai-assistants/custom-gpt" className="service-chip">مدل اختصاصی (Custom GPT)</Link>
+                <Link href="/services/ai-assistants/customer-support-agent" className="service-chip">پشتیبان هوشمند</Link>
+                <Link href="/services/ai-assistants/ai-consulting" className="service-chip">مشاوره AI</Link>
+              </div>
+            </div>
           </SlideUp>
         </div>
       </section>
