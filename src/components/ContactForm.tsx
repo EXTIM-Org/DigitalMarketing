@@ -102,10 +102,11 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
               <label htmlFor="service" style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', fontWeight: 500 }}>نوع خدمات</label>
               <select id="service" className="form-input" required defaultValue="">
                 <option value="" disabled>انتخاب کنید...</option>
-                <option value="web">طراحی وب‌سایت</option>
-                <option value="software">توسعه نرم‌افزار</option>
-                <option value="bot">ربات اتوماسیون</option>
-                <option value="seo">سئو و بهینه‌سازی</option>
+                <option value="web-design">طراحی وب‌سایت (شرکتی / فروشگاهی)</option>
+                <option value="software-development">توسعه نرم‌افزار و وب‌اپلیکیشن</option>
+                <option value="smart-bots">ربات‌های هوشمند و اتوماسیون</option>
+                <option value="seo">سئو و بهینه‌سازی محتوا</option>
+                <option value="ai-assistants">دستیارهای هوش مصنوعی</option>
                 <option value="other">سایر موارد / مشاوره عمومی</option>
               </select>
             </div>
