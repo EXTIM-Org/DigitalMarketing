@@ -7,13 +7,29 @@ interface ContactFormProps {
   onClose: () => void;
 }
 
+const serviceOptions = [
+  { value: "web-design", label: "طراحی وب‌سایت (شرکتی / فروشگاهی)" },
+  { value: "software-development", label: "توسعه نرم‌افزار و وب‌اپلیکیشن" },
+  { value: "smart-bots", label: "ربات‌های هوشمند و اتوماسیون" },
+  { value: "seo", label: "سئو و بهینه‌سازی محتوا" },
+  { value: "ai-assistants", label: "دستیارهای هوش مصنوعی" },
+  { value: "other", label: "سایر موارد / مشاوره عمومی" },
+];
+
 export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
   const [status, setStatus] = useState<'idle' | 'loading' | 'success'>('idle');
+  const [selectedService, setSelectedService] = useState('');
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   if (!isOpen) return null;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!selectedService) {
+      alert("لطفاً نوع خدمات را انتخاب کنید.");
+      return;
+    }
+    
     setStatus('loading');
     
     setTimeout(() => {
@@ -24,6 +40,8 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
       }, 3000);
     }, 1500);
   };
+
+  const selectedOption = serviceOptions.find(opt => opt.value === selectedService);
 
   return (
     <div style={{
@@ -99,16 +117,77 @@ export default function ContactForm({ isOpen, onClose }: ContactFormProps) {
             </div>
 
             <div>
-              <label htmlFor="service" style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', fontWeight: 500 }}>نوع خدمات</label>
-              <select id="service" className="form-input" required defaultValue="">
-                <option value="" disabled>انتخاب کنید...</option>
-                <option value="web-design">طراحی وب‌سایت (شرکتی / فروشگاهی)</option>
-                <option value="software-development">توسعه نرم‌افزار و وب‌اپلیکیشن</option>
-                <option value="smart-bots">ربات‌های هوشمند و اتوماسیون</option>
-                <option value="seo">سئو و بهینه‌سازی محتوا</option>
-                <option value="ai-assistants">دستیارهای هوش مصنوعی</option>
-                <option value="other">سایر موارد / مشاوره عمومی</option>
-              </select>
+              <label style={{ display: 'block', marginBottom: '0.5rem', fontSize: '0.85rem', fontWeight: 500 }}>نوع خدمات</label>
+              
+              <div style={{ position: 'relative' }}>
+                <div 
+                  className="form-input"
+                  style={{ 
+                    cursor: 'pointer', 
+                    display: 'flex', 
+                    justifyContent: 'space-between', 
+                    alignItems: 'center',
+                    userSelect: 'none'
+                  }}
+                  onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                >
+                  <span style={{ color: selectedService ? 'inherit' : 'var(--text-muted)' }}>
+                    {selectedOption ? selectedOption.label : 'انتخاب کنید...'}
+                  </span>
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ transform: isDropdownOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }}>
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </div>
+                
+                {isDropdownOpen && (
+                  <div style={{
+                    position: 'absolute',
+                    top: '100%',
+                    left: 0,
+                    right: 0,
+                    marginTop: '0.25rem',
+                    background: 'var(--card-bg)',
+                    backdropFilter: 'var(--nav-blur)',
+                    WebkitBackdropFilter: 'var(--nav-blur)',
+                    border: '1px solid var(--card-border)',
+                    borderRadius: '8px',
+                    boxShadow: 'var(--glass-shadow)',
+                    zIndex: 50,
+                    overflow: 'hidden',
+                    animation: 'fadeIn 0.2s ease-out'
+                  }}>
+                    {serviceOptions.map((opt) => (
+                      <div 
+                        key={opt.value}
+                        onClick={() => {
+                          setSelectedService(opt.value);
+                          setIsDropdownOpen(false);
+                        }}
+                        style={{
+                          padding: '10px 16px',
+                          cursor: 'pointer',
+                          transition: 'background 0.2s',
+                          color: 'var(--text-color)',
+                          fontSize: '0.9rem',
+                          background: selectedService === opt.value ? 'rgba(59, 130, 246, 0.1)' : 'transparent'
+                        }}
+                        onMouseOver={(e) => {
+                          if (selectedService !== opt.value) {
+                            e.currentTarget.style.background = 'rgba(255,255,255,0.05)';
+                          }
+                        }}
+                        onMouseOut={(e) => {
+                          if (selectedService !== opt.value) {
+                            e.currentTarget.style.background = 'transparent';
+                          }
+                        }}
+                      >
+                        {opt.label}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
             
             <div>
