@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'نمونه کارهای طراحی وب | اپکس دیجیتال',
-  description: 'خدمات تخصصی نمونه کارهای طراحی وب توسط تیم اپکس دیجیتال.',
+  title: 'نمونه کارهای طراحی وب | EXTIM',
+  description: 'خدمات تخصصی نمونه کارهای طراحی وب توسط تیم EXTIM.',
 };
 
 export default function Page() {

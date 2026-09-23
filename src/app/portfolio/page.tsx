@@ -5,8 +5,8 @@ import SlideUp from '@/components/animations/SlideUp';
 import { prisma } from '@/lib/prisma';
 
 export const metadata: Metadata = {
-  title: 'نمونه کارها | اپکس دیجیتال',
-  description: 'گالری منتخب پروژه‌های موفق اپکس دیجیتال در زمینه طراحی سایت، توسعه نرم‌افزار و اپلیکیشن موبایل.',
+  title: 'نمونه کارها | EXTIM',
+  description: 'گالری منتخب پروژه‌های موفق EXTIM در زمینه طراحی سایت، توسعه نرم‌افزار و اپلیکیشن موبایل.',
 };
 
 // Next.js Revalidation

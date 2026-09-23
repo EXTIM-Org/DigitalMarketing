@@ -4,7 +4,7 @@ import SlideUp from '@/components/animations/SlideUp';
 import { prisma } from '@/lib/prisma';
 
 export const metadata: Metadata = {
-  title: 'مقالات و آموزش‌ها | اپکس دیجیتال',
+  title: 'مقالات و آموزش‌ها | EXTIM',
   description: 'آخرین مقالات آموزشی در زمینه طراحی وب‌سایت، سئو، هوش مصنوعی و اتوماسیون فرآیندهای تجاری.',
   keywords: ['وبلاگ', 'مقالات آموزشی', 'آموزش سئو', 'آموزش برنامه نویسی', 'توسعه وب'],
 };
@@ -30,7 +30,7 @@ export default async function BlogIndexPage() {
       <SlideUp>
         <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
           <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1rem', background: 'linear-gradient(to right, var(--text-color), var(--primary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            وبلاگ اپکس دیجیتال
+            وبلاگ EXTIM
           </h1>
           <p style={{ color: 'var(--text-muted)', fontSize: '1.2rem', maxWidth: '600px', margin: '0 auto' }}>
             جدیدترین مقالات آموزشی، اخبار تکنولوژی و راهنمای رشد کسب‌وکار در دنیای دیجیتال

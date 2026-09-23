@@ -6,7 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "اپکس دیجیتال | طراحی سایت و نرم‌افزار",
+  title: "EXTIM | طراحی سایت و نرم‌افزار",
   description: "خدمات مدرن طراحی وب‌سایت، توسعه نرم‌افزار، ربات‌های اتوماسیون و سئو.",
 };
 

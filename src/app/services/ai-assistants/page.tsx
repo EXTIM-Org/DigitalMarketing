@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'دستیارهای هوش مصنوعی | اپکس دیجیتال',
-  description: 'خدمات تخصصی دستیارهای هوش مصنوعی توسط تیم اپکس دیجیتال.',
+  title: 'دستیارهای هوش مصنوعی | EXTIM',
+  description: 'خدمات تخصصی دستیارهای هوش مصنوعی توسط تیم EXTIM.',
 };
 
 export default function Page() {

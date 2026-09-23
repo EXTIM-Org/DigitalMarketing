@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'خدمات طراحی وبسایت شرکتی و فروشگاهی | Apex Digital',
+  title: 'خدمات طراحی وبسایت شرکتی و فروشگاهی | EXTIM',
   description: 'طراحی سایت مدرن، واکنش‌گرا و سریع با تمرکز بر تجربه کاربری و سئو. ما وب‌سایت‌هایی می‌سازیم که مشتریان شما را تحت تاثیر قرار دهد.',
   keywords: ['طراحی سایت', 'طراحی وبسایت', 'سایت شرکتی', 'سایت فروشگاهی', 'طراحی سایت با Next.js'],
 };

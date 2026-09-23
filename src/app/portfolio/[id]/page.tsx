@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${item.title} | نمونه کار اپکس دیجیتال`,
+    title: `${item.title} | نمونه کار EXTIM`,
     description: item.description,
   };
 }

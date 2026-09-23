@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'استراتژی و سئو محتوا | اپکس دیجیتال',
-  description: 'خدمات تخصصی استراتژی و سئو محتوا توسط تیم اپکس دیجیتال.',
+  title: 'استراتژی و سئو محتوا | EXTIM',
+  description: 'خدمات تخصصی استراتژی و سئو محتوا توسط تیم EXTIM.',
 };
 
 export default function Page() {

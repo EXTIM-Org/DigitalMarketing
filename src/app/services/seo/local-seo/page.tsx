@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'سئو محلی | اپکس دیجیتال',
-  description: 'خدمات تخصصی سئو محلی توسط تیم اپکس دیجیتال.',
+  title: 'سئو محلی | EXTIM',
+  description: 'خدمات تخصصی سئو محلی توسط تیم EXTIM.',
 };
 
 export default function Page() {

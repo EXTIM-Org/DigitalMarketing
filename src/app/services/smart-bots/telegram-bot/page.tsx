@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'طراحی ربات تلگرام | اپکس دیجیتال',
-  description: 'خدمات تخصصی طراحی ربات تلگرام توسط تیم اپکس دیجیتال.',
+  title: 'طراحی ربات تلگرام | EXTIM',
+  description: 'خدمات تخصصی طراحی ربات تلگرام توسط تیم EXTIM.',
 };
 
 export default function Page() {

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'توسعه اپلیکیشن موبایل | اپکس دیجیتال',
-  description: 'خدمات تخصصی توسعه اپلیکیشن موبایل توسط تیم اپکس دیجیتال.',
+  title: 'طراحی API و یکپارچه‌سازی | EXTIM',
+  description: 'خدمات تخصصی طراحی API و یکپارچه‌سازی توسط تیم EXTIM.',
 };
 
 export default function Page() {
@@ -17,7 +17,7 @@ export default function Page() {
         </div>
         
         <h1 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight tracking-tight">
-          توسعه اپلیکیشن موبایل
+          طراحی API و یکپارچه‌سازی
         </h1>
         
         <p className="text-lg md:text-xl text-white/60 mb-10 max-w-2xl mx-auto leading-relaxed">

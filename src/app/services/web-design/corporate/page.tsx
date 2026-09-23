@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'طراحی سایت شرکتی | اپکس دیجیتال',
-  description: 'خدمات تخصصی طراحی سایت شرکتی توسط تیم اپکس دیجیتال.',
+  title: 'طراحی سایت شرکتی | EXTIM',
+  description: 'خدمات تخصصی طراحی سایت شرکتی توسط تیم EXTIM.',
 };
 
 export default function Page() {

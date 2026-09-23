@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 800, textDecoration: 'none', color: 'inherit', display: 'inline-block', marginBottom: '1rem' }}>
-              اپکس دیجیتال
+              EXTIM
             </Link>
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, fontSize: '0.95rem' }}>
               ما به کسب‌وکارها کمک می‌کنیم تا با استفاده از طراحی مدرن، سئو و اتوماسیون هوشمند، در دنیای دیجیتال بدرخشند.
@@ -59,8 +59,8 @@ export default function Footer() {
             <h3 style={{ fontSize: '1.1rem', fontWeight: 700, marginBottom: '1.5rem', color: 'var(--text-color)' }}>ارتباط با ما</h3>
             <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
               <li style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>📍 تهران، ایران</li>
-              <li style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>📞 ۰۲۱-۱۲۳۴۵۶۷۸</li>
-              <li style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>✉️ info@apexdigital.ir</li>
+              <li style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>📞 09202531501</li>
+              <li style={{ color: 'var(--text-muted)', fontSize: '0.95rem' }}>✉️ info@extim.ir</li>
             </ul>
           </div>
 
@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div style={{ paddingTop: '2rem', borderTop: '1px solid var(--card-border)', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>
-            © {new Date().toLocaleDateString('fa-IR', { year: 'numeric' })} اپکس دیجیتال. تمامی حقوق محفوظ است.
+            © {new Date().toLocaleDateString('fa-IR', { year: 'numeric' })} EXTIM. تمامی حقوق محفوظ است.
           </p>
           <div style={{ display: 'flex', gap: '1rem' }}>
             <a href="#" aria-label="لینکدین" style={{ color: 'var(--text-muted)' }} className="footer-link">

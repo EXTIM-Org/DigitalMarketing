@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'مهندسی نرم‌افزار | اپکس دیجیتال',
-  description: 'خدمات تخصصی مهندسی نرم‌افزار توسط تیم اپکس دیجیتال.',
+  title: 'مهندسی نرم‌افزار | EXTIM',
+  description: 'خدمات تخصصی مهندسی نرم‌افزار توسط تیم EXTIM.',
 };
 
 export default function Page() {

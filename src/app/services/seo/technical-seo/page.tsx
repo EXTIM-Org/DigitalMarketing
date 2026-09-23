@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'سئو تکنیکال | اپکس دیجیتال',
-  description: 'خدمات تخصصی سئو تکنیکال توسط تیم اپکس دیجیتال.',
+  title: 'سئو تکنیکال | EXTIM',
+  description: 'خدمات تخصصی سئو تکنیکال توسط تیم EXTIM.',
 };
 
 export default function Page() {

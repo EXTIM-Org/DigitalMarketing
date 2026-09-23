@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'سئو و هک رشد | اپکس دیجیتال',
-  description: 'خدمات تخصصی سئو و هک رشد توسط تیم اپکس دیجیتال.',
+  title: 'سئو و هک رشد | EXTIM',
+  description: 'خدمات تخصصی سئو و هک رشد توسط تیم EXTIM.',
 };
 
 export default function Page() {

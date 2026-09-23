@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'نمونه کارهای توسعه نرم‌افزار | اپکس دیجیتال',
-  description: 'خدمات تخصصی نمونه کارهای توسعه نرم‌افزار توسط تیم اپکس دیجیتال.',
+  title: 'نمونه کارهای توسعه نرم‌افزار | EXTIM',
+  description: 'خدمات تخصصی نمونه کارهای توسعه نرم‌افزار توسط تیم EXTIM.',
 };
 
 export default function Page() {

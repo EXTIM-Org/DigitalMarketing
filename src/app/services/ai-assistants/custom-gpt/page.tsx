@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'مدل‌های زبانی اختصاصی (Custom GPT) | اپکس دیجیتال',
-  description: 'خدمات تخصصی مدل‌های زبانی اختصاصی (Custom GPT) توسط تیم اپکس دیجیتال.',
+  title: 'مدل‌های زبانی اختصاصی (Custom GPT) | EXTIM',
+  description: 'خدمات تخصصی مدل‌های زبانی اختصاصی (Custom GPT) توسط تیم EXTIM.',
 };
 
 export default function Page() {

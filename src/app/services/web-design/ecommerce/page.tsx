@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'طراحی فروشگاه اینترنتی | اپکس دیجیتال',
-  description: 'خدمات تخصصی طراحی فروشگاه اینترنتی توسط تیم اپکس دیجیتال.',
+  title: 'طراحی فروشگاه اینترنتی | EXTIM',
+  description: 'خدمات تخصصی طراحی فروشگاه اینترنتی توسط تیم EXTIM.',
 };
 
 export default function Page() {

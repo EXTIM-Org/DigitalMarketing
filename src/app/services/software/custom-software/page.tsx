@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'توسعه نرم‌افزارهای اختصاصی | اپکس دیجیتال',
-  description: 'خدمات تخصصی توسعه نرم‌افزارهای اختصاصی توسط تیم اپکس دیجیتال.',
+  title: 'توسعه نرم‌افزارهای اختصاصی | EXTIM',
+  description: 'خدمات تخصصی توسعه نرم‌افزارهای اختصاصی توسط تیم EXTIM.',
 };
 
 export default function Page() {

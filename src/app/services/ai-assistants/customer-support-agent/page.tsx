@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'ایجنت هوشمند پشتیبانی | اپکس دیجیتال',
-  description: 'خدمات تخصصی ایجنت هوشمند پشتیبانی توسط تیم اپکس دیجیتال.',
+  title: 'ایجنت هوشمند پشتیبانی | EXTIM',
+  description: 'خدمات تخصصی ایجنت هوشمند پشتیبانی توسط تیم EXTIM.',
 };
 
 export default function Page() {

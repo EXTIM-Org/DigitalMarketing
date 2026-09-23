@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'اتوماسیون فرآیندهای کسب‌و‌کار | اپکس دیجیتال',
-  description: 'خدمات تخصصی اتوماسیون فرآیندهای کسب‌و‌کار توسط تیم اپکس دیجیتال.',
+  title: 'اتوماسیون فرآیندهای کسب‌و‌کار | EXTIM',
+  description: 'خدمات تخصصی اتوماسیون فرآیندهای کسب‌و‌کار توسط تیم EXTIM.',
 };
 
 export default function Page() {

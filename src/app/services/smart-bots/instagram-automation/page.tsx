@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'اتوماسیون اینستاگرام | اپکس دیجیتال',
-  description: 'خدمات تخصصی اتوماسیون اینستاگرام توسط تیم اپکس دیجیتال.',
+  title: 'اتوماسیون اینستاگرام | EXTIM',
+  description: 'خدمات تخصصی اتوماسیون اینستاگرام توسط تیم EXTIM.',
 };
 
 export default function Page() {

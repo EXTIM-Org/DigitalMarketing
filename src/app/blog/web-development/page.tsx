@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'توسعه وب | اپکس دیجیتال',
-  description: 'خدمات تخصصی توسعه وب توسط تیم اپکس دیجیتال.',
+  title: 'توسعه وب | EXTIM',
+  description: 'خدمات تخصصی توسعه وب توسط تیم EXTIM.',
 };
 
 export default function Page() {

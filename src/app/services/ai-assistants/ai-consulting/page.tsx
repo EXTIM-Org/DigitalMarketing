@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'مشاوره و استقرار راه‌حل‌های AI | اپکس دیجیتال',
-  description: 'خدمات تخصصی مشاوره و استقرار راه‌حل‌های AI توسط تیم اپکس دیجیتال.',
+  title: 'مشاوره و استقرار راه‌حل‌های AI | EXTIM',
+  description: 'خدمات تخصصی مشاوره و استقرار راه‌حل‌های AI توسط تیم EXTIM.',
 };
 
 export default function Page() {

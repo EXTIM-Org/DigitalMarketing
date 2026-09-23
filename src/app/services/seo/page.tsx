@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'خدمات سئو سایت و بهینه‌سازی موتور جستجو | Apex Digital',
+  title: 'خدمات سئو سایت و بهینه‌سازی موتور جستجو | EXTIM',
   description: 'ارتقا رتبه سایت در صفحه اول گوگل. خدمات جامع سئو تکنیکال، سئو داخلی و لینک‌سازی با ضمانت بهبود ترافیک ارگانیک.',
   keywords: ['سئو', 'خدمات سئو', 'بهینه سازی سایت', 'سئو تکنیکال', 'رتبه اول گوگل'],
 };
