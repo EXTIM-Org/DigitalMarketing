@@ -53,7 +53,7 @@ export default function Navbar() {
         {/* Brand */}
         <div style={{ fontWeight: 'bold', fontSize: '1.25rem', letterSpacing: '-0.025em', zIndex: 101 }}>
           <Link href="/" style={{ textDecoration: 'none', color: 'inherit' }} onClick={() => setIsOpen(false)}>
-            EXTIM
+            EXTIM Digital
           </Link>
         </div>
 

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'نمونه کارهای توسعه نرم‌افزار | EXTIM',
-  description: 'خدمات تخصصی نمونه کارهای توسعه نرم‌افزار توسط تیم EXTIM.',
+  title: 'نمونه کارهای توسعه نرم‌افزار | EXTIM Digital',
+  description: 'خدمات تخصصی نمونه کارهای توسعه نرم‌افزار توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

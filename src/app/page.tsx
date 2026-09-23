@@ -11,7 +11,7 @@ export default function Home() {
       <section style={{ minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '4rem 0' }}>
         <SlideUp yOffset={30}>
           <div style={{ display: 'inline-block', padding: '0.5rem 1.5rem', background: 'rgba(56, 189, 248, 0.1)', borderRadius: '2rem', border: '1px solid rgba(56, 189, 248, 0.2)', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', marginBottom: '2rem' }}>
-            به EXTIM خوش آمدید
+            به EXTIM Digital خوش آمدید
           </div>
         </SlideUp>
         

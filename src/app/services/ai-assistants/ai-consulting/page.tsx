@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'مشاوره و استقرار راه‌حل‌های AI | EXTIM',
-  description: 'خدمات تخصصی مشاوره و استقرار راه‌حل‌های AI توسط تیم EXTIM.',
+  title: 'مشاوره و استقرار راه‌حل‌های AI | EXTIM Digital',
+  description: 'خدمات تخصصی مشاوره و استقرار راه‌حل‌های AI توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

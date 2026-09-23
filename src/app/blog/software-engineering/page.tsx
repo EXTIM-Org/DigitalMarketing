@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'مهندسی نرم‌افزار | EXTIM',
-  description: 'خدمات تخصصی مهندسی نرم‌افزار توسط تیم EXTIM.',
+  title: 'مهندسی نرم‌افزار | EXTIM Digital',
+  description: 'خدمات تخصصی مهندسی نرم‌افزار توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

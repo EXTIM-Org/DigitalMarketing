@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'نمونه کارهای طراحی وب | EXTIM',
-  description: 'خدمات تخصصی نمونه کارهای طراحی وب توسط تیم EXTIM.',
+  title: 'نمونه کارهای طراحی وب | EXTIM Digital',
+  description: 'خدمات تخصصی نمونه کارهای طراحی وب توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

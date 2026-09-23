@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'طراحی سایت شرکتی | EXTIM',
-  description: 'خدمات تخصصی طراحی سایت شرکتی توسط تیم EXTIM.',
+  title: 'طراحی سایت شرکتی | EXTIM Digital',
+  description: 'خدمات تخصصی طراحی سایت شرکتی توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

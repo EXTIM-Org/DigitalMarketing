@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'داشبورد مدیریت | EXTIM',
+  title: 'داشبورد مدیریت | EXTIM Digital',
 };
 
 export default function AdminDashboard() {

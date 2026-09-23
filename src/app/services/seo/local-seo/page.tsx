@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'سئو محلی | EXTIM',
-  description: 'خدمات تخصصی سئو محلی توسط تیم EXTIM.',
+  title: 'سئو محلی | EXTIM Digital',
+  description: 'خدمات تخصصی سئو محلی توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

@@ -9,7 +9,7 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <Link href="/" style={{ fontSize: '1.5rem', fontWeight: 800, textDecoration: 'none', color: 'inherit', display: 'inline-block', marginBottom: '1rem' }}>
-              EXTIM
+              EXTIM Digital
             </Link>
             <p style={{ color: 'var(--text-muted)', lineHeight: 1.8, fontSize: '0.95rem' }}>
               ما به کسب‌وکارها کمک می‌کنیم تا با استفاده از طراحی مدرن، سئو و اتوماسیون هوشمند، در دنیای دیجیتال بدرخشند.
@@ -69,7 +69,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div style={{ paddingTop: '2rem', borderTop: '1px solid var(--card-border)', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
           <p style={{ color: 'var(--text-muted)', fontSize: '0.85rem', margin: 0 }}>
-            © {new Date().toLocaleDateString('fa-IR', { year: 'numeric' })} EXTIM. تمامی حقوق محفوظ است.
+            © {new Date().toLocaleDateString('fa-IR', { year: 'numeric' })} EXTIM Digital. تمامی حقوق محفوظ است.
           </p>
           <div style={{ display: 'flex', gap: '1rem' }}>
             <a href="#" aria-label="لینکدین" style={{ color: 'var(--text-muted)' }} className="footer-link">

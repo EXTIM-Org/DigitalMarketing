@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'اتوماسیون فرآیندهای کسب‌و‌کار | EXTIM',
-  description: 'خدمات تخصصی اتوماسیون فرآیندهای کسب‌و‌کار توسط تیم EXTIM.',
+  title: 'اتوماسیون فرآیندهای کسب‌و‌کار | EXTIM Digital',
+  description: 'خدمات تخصصی اتوماسیون فرآیندهای کسب‌و‌کار توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

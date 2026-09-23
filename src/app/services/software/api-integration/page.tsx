@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'طراحی API و یکپارچه‌سازی | EXTIM',
-  description: 'خدمات تخصصی طراحی API و یکپارچه‌سازی توسط تیم EXTIM.',
+  title: 'طراحی API و یکپارچه‌سازی | EXTIM Digital',
+  description: 'خدمات تخصصی طراحی API و یکپارچه‌سازی توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

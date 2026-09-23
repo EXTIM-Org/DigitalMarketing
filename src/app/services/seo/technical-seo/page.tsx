@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'سئو تکنیکال | EXTIM',
-  description: 'خدمات تخصصی سئو تکنیکال توسط تیم EXTIM.',
+  title: 'سئو تکنیکال | EXTIM Digital',
+  description: 'خدمات تخصصی سئو تکنیکال توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

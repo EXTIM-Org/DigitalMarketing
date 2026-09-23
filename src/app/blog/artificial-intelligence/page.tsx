@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'هوش مصنوعی | EXTIM',
-  description: 'خدمات تخصصی هوش مصنوعی توسط تیم EXTIM.',
+  title: 'هوش مصنوعی | EXTIM Digital',
+  description: 'خدمات تخصصی هوش مصنوعی توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

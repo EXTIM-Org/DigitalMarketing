@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'طراحی وب‌اپلیکیشن (PWA/SaaS) | EXTIM',
-  description: 'خدمات تخصصی طراحی وب‌اپلیکیشن (PWA/SaaS) توسط تیم EXTIM.',
+  title: 'طراحی وب‌اپلیکیشن (PWA/SaaS) | EXTIM Digital',
+  description: 'خدمات تخصصی طراحی وب‌اپلیکیشن (PWA/SaaS) توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'ایجنت هوشمند پشتیبانی | EXTIM',
-  description: 'خدمات تخصصی ایجنت هوشمند پشتیبانی توسط تیم EXTIM.',
+  title: 'ایجنت هوشمند پشتیبانی | EXTIM Digital',
+  description: 'خدمات تخصصی ایجنت هوشمند پشتیبانی توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

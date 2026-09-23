@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'توسعه اپلیکیشن موبایل | EXTIM',
-  description: 'خدمات تخصصی توسعه اپلیکیشن موبایل توسط تیم EXTIM.',
+  title: 'توسعه اپلیکیشن موبایل | EXTIM Digital',
+  description: 'خدمات تخصصی توسعه اپلیکیشن موبایل توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

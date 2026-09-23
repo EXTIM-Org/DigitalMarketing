@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'توسعه نرم‌افزارهای اختصاصی | EXTIM',
-  description: 'خدمات تخصصی توسعه نرم‌افزارهای اختصاصی توسط تیم EXTIM.',
+  title: 'توسعه نرم‌افزارهای اختصاصی | EXTIM Digital',
+  description: 'خدمات تخصصی توسعه نرم‌افزارهای اختصاصی توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

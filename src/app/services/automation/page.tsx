@@ -103,7 +103,7 @@ export default function AutomationServicePage() {
           <div style={{ position: 'absolute', right: '-10%', top: '-20%', width: '400px', height: '400px', background: 'radial-gradient(circle, rgba(139,92,246,0.3) 0%, transparent 70%)', zIndex: 0 }} />
           
           <div style={{ position: 'relative', zIndex: 1 }}>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '3rem', textAlign: 'center' }}>خدمات اتوماسیون EXTIM</h2>
+            <h2 style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '3rem', textAlign: 'center' }}>خدمات اتوماسیون EXTIM Digital</h2>
             
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '2rem' }}>
               {[
@@ -134,7 +134,7 @@ export default function AutomationServicePage() {
         >
           <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1rem' }}>آماده تحول در فرآیندهای سازمان خود هستید؟</h2>
           <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
-            همین حالا با کارشناسان EXTIM تماس بگیرید تا راهکارهای اختصاصی اتوماسیون برای کسب‌وکار شما را بررسی کنیم.
+            همین حالا با کارشناسان EXTIM Digital تماس بگیرید تا راهکارهای اختصاصی اتوماسیون برای کسب‌وکار شما را بررسی کنیم.
           </p>
           <Link href="/contact" className="btn-primary" style={{ display: 'inline-block', padding: '1rem 3rem', fontSize: '1.1rem' }}>
             درخواست مشاوره تخصصی

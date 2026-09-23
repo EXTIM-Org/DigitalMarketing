@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'طراحی فروشگاه اینترنتی | EXTIM',
-  description: 'خدمات تخصصی طراحی فروشگاه اینترنتی توسط تیم EXTIM.',
+  title: 'طراحی فروشگاه اینترنتی | EXTIM Digital',
+  description: 'خدمات تخصصی طراحی فروشگاه اینترنتی توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

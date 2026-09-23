@@ -23,12 +23,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   if (!post) {
     return {
-      title: 'مقاله پیدا نشد | EXTIM',
+      title: 'مقاله پیدا نشد | EXTIM Digital',
     };
   }
 
   return {
-    title: `${post.title} | وبلاگ EXTIM`,
+    title: `${post.title} | وبلاگ EXTIM Digital`,
     description: post.excerpt,
   };
 }

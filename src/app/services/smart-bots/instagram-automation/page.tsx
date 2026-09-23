@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'اتوماسیون اینستاگرام | EXTIM',
-  description: 'خدمات تخصصی اتوماسیون اینستاگرام توسط تیم EXTIM.',
+  title: 'اتوماسیون اینستاگرام | EXTIM Digital',
+  description: 'خدمات تخصصی اتوماسیون اینستاگرام توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

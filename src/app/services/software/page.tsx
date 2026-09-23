@@ -96,7 +96,7 @@ export default function SoftwareServicePage() {
           style={{ padding: '4rem 3rem', background: 'var(--card-bg)', position: 'relative', overflow: 'hidden' }}
         >
           <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-            <h2 style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '1rem' }}>خدمات توسعه نرم‌افزار EXTIM</h2>
+            <h2 style={{ fontSize: '2.5rem', fontWeight: 700, marginBottom: '1rem' }}>خدمات توسعه نرم‌افزار EXTIM Digital</h2>
             <p style={{ color: 'var(--text-muted)', fontSize: '1.1rem' }}>پوشش تمامی نیازهای نرم‌افزاری کسب‌وکار شما</p>
           </div>
           
@@ -133,7 +133,7 @@ export default function SoftwareServicePage() {
         >
           <h2 style={{ fontSize: '2rem', fontWeight: 800, marginBottom: '1rem' }}>نیاز به یک سیستم نرم‌افزاری اختصاصی دارید؟</h2>
           <p style={{ fontSize: '1.1rem', color: 'var(--text-muted)', marginBottom: '2rem', maxWidth: '600px', margin: '0 auto 2rem' }}>
-            ایده خود را با ما در میان بگذارید تا کارشناسان EXTIM بهترین مسیر توسعه و تکنولوژی را به شما پیشنهاد دهند.
+            ایده خود را با ما در میان بگذارید تا کارشناسان EXTIM Digital بهترین مسیر توسعه و تکنولوژی را به شما پیشنهاد دهند.
           </p>
           <Link href="/contact" className="btn-primary" style={{ display: 'inline-block', padding: '1rem 3rem', fontSize: '1.1rem', background: 'linear-gradient(135deg, #f43f5e, #8b5cf6)' }}>
             مشاوره فنی و برآورد هزینه

@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'استراتژی و سئو محتوا | EXTIM',
-  description: 'خدمات تخصصی استراتژی و سئو محتوا توسط تیم EXTIM.',
+  title: 'استراتژی و سئو محتوا | EXTIM Digital',
+  description: 'خدمات تخصصی استراتژی و سئو محتوا توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

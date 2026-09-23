@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   }
 
   return {
-    title: `${item.title} | نمونه کار EXTIM`,
+    title: `${item.title} | نمونه کار EXTIM Digital`,
     description: item.description,
   };
 }

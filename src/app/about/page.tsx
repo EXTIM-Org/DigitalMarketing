@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'درباره ما | EXTIM',
-  description: 'آشنایی با تیم EXTIM، ماموریت و داستان شکل‌گیری آژانس توسعه دیجیتال.',
-  keywords: ['درباره ما', 'تیم EXTIM', 'شرکت طراحی سایت', 'آژانس دیجیتال'],
+  title: 'درباره ما | EXTIM Digital',
+  description: 'آشنایی با تیم EXTIM Digital، ماموریت و داستان شکل‌گیری آژانس توسعه دیجیتال.',
+  keywords: ['درباره ما', 'تیم EXTIM Digital', 'شرکت طراحی سایت', 'آژانس دیجیتال'],
 };
 
 export default function AboutPage() {
@@ -13,11 +13,11 @@ export default function AboutPage() {
       
       <div className="glass-panel" style={{ padding: '3rem', marginTop: '1rem' }}>
         <h1 style={{ fontSize: '3rem', fontWeight: 800, marginBottom: '1.5rem', background: 'linear-gradient(to right, var(--text-color), var(--primary))', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-          درباره EXTIM
+          درباره EXTIM Digital
         </h1>
         
         <p style={{ fontSize: '1.2rem', color: 'var(--text-muted)', lineHeight: 1.8, marginBottom: '2rem' }}>
-          ما در **EXTIM** تیمی از مهندسان نرم‌افزار، طراحان خلاق و متخصصان مارکتینگ هستیم که با یک هدف مشترک گرد هم آمده‌ایم: **تسریع رشد دیجیتال کسب‌وکارها**.
+          ما در **EXTIM Digital** تیمی از مهندسان نرم‌افزار، طراحان خلاق و متخصصان مارکتینگ هستیم که با یک هدف مشترک گرد هم آمده‌ایم: **تسریع رشد دیجیتال کسب‌وکارها**.
           ما باور داریم که تکنولوژی زمانی ارزشمند است که بتواند چالشی را حل کند و ارزش افزوده‌ای برای کاربران نهایی خلق نماید.
         </p>
 

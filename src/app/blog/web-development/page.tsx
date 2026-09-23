@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'توسعه وب | EXTIM',
-  description: 'خدمات تخصصی توسعه وب توسط تیم EXTIM.',
+  title: 'توسعه وب | EXTIM Digital',
+  description: 'خدمات تخصصی توسعه وب توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {

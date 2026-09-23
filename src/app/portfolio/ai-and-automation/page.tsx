@@ -1,8 +1,8 @@
 import Link from 'next/link';
 
 export const metadata = {
-  title: 'نمونه کارهای اتوماسیون و هوش مصنوعی | EXTIM',
-  description: 'خدمات تخصصی نمونه کارهای اتوماسیون و هوش مصنوعی توسط تیم EXTIM.',
+  title: 'نمونه کارهای اتوماسیون و هوش مصنوعی | EXTIM Digital',
+  description: 'خدمات تخصصی نمونه کارهای اتوماسیون و هوش مصنوعی توسط تیم EXTIM Digital.',
 };
 
 export default function Page() {
