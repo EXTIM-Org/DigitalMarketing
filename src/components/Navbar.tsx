@@ -48,7 +48,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="glass-nav" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 100, padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <nav className="glass-nav nav-padding" style={{ position: 'fixed', top: 0, width: '100%', zIndex: 100, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
         
         {/* Brand */}
         <div style={{ fontWeight: 'bold', fontSize: '1.25rem', letterSpacing: '-0.025em', zIndex: 101 }}>

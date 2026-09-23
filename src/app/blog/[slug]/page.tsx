@@ -30,6 +30,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${post.title} | وبلاگ EXTIM Digital`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://extim.ir/blog/${post.slug}`,
+    },
+    openGraph: {
+      title: `${post.title} | وبلاگ EXTIM Digital`,
+      description: post.excerpt || '',
+      url: `https://extim.ir/blog/${post.slug}`,
+      type: 'article',
+      publishedTime: post.createdAt.toISOString(),
+    },
   };
 }
 
@@ -43,6 +53,33 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <div style={{ padding: '4rem 2rem', maxWidth: '800px', margin: '0 auto' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BlogPosting",
+            "headline": post.title,
+            "description": post.excerpt,
+            "image": post.mainImage ? [post.mainImage] : [],
+            "datePublished": post.createdAt,
+            "dateModified": post.updatedAt,
+            "author": {
+              "@type": "Organization",
+              "name": "EXTIM Digital",
+              "url": "https://extim.ir"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "EXTIM Digital",
+              "logo": {
+                "@type": "ImageObject",
+                "url": "https://extim.ir/favicon.ico"
+              }
+            }
+          })
+        }}
+      />
       <Link href="/blog" style={{ color: 'var(--primary)', textDecoration: 'none', marginBottom: '2rem', display: 'inline-block', fontWeight: 600 }}>
         &rarr; بازگشت به وبلاگ
       </Link>
@@ -64,6 +101,8 @@ export default async function BlogPostPage({ params }: Props) {
               alt={post.title}
               fill
               style={{ objectFit: 'cover' }}
+              sizes="(max-width: 768px) 100vw, 800px"
+              priority
             />
           </div>
         )}

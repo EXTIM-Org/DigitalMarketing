@@ -28,6 +28,16 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${item.title} | نمونه کار EXTIM Digital`,
     description: item.description,
+    alternates: {
+      canonical: `https://extim.ir/portfolio/${item.id}`,
+    },
+    openGraph: {
+      title: `${item.title} | نمونه کار EXTIM Digital`,
+      description: item.description,
+      url: `https://extim.ir/portfolio/${item.id}`,
+      images: item.image ? [{ url: item.image }] : [],
+      type: 'article',
+    },
   };
 }
 
@@ -49,6 +59,24 @@ export default async function PortfolioDetailPage({ params }: PageProps) {
 
   return (
     <main style={{ padding: '4rem 2rem', maxWidth: '1000px', margin: '0 auto', minHeight: '100vh' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CreativeWork",
+            "name": item.title,
+            "description": item.description,
+            "image": item.image ? [item.image] : [],
+            "dateCreated": item.createdAt,
+            "creator": {
+              "@type": "Organization",
+              "name": "EXTIM Digital",
+              "url": "https://extim.ir"
+            }
+          })
+        }}
+      />
       <SlideUp yOffset={20}>
         <Link 
           href="/portfolio" 

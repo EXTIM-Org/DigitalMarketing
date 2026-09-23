@@ -5,10 +5,23 @@ import SlideUp from "@/components/animations/SlideUp";
 
 export default function Home() {
   return (
-    <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '0 2rem' }}>
+    <div className="container-padding" style={{ maxWidth: '1200px', margin: '0 auto' }}>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "EXTIM Digital",
+            "url": "https://extim.ir",
+            "logo": "https://extim.ir/favicon.ico",
+            "description": "ما یک آژانس خلاق هستیم که با استفاده از جدیدترین تکنولوژی‌های توسعه وب، سئو و اتوماسیون، کسب‌وکار شما را به سطح بالاتری می‌بریم."
+          })
+        }}
+      />
       
       {/* Hero Section */}
-      <section style={{ minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '4rem 0' }}>
+      <section className="hero-padding" style={{ minHeight: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
         <SlideUp yOffset={30}>
           <div style={{ display: 'inline-block', padding: '0.5rem 1.5rem', background: 'rgba(56, 189, 248, 0.1)', borderRadius: '2rem', border: '1px solid rgba(56, 189, 248, 0.2)', color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem', marginBottom: '2rem' }}>
             به EXTIM Digital خوش آمدید
@@ -36,8 +49,7 @@ export default function Home() {
       </section>
 
       {/* SERVICES SECTION */}
-      <section id="services" style={{ 
-        padding: '6rem 0',
+      <section id="services" className="hero-padding" style={{ 
         maxWidth: '1200px',
         margin: '0 auto'
       }}>

@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EXTIM Digital | وب‌سایت رسمی آژانس خلاق EXTIM
 
-## Getting Started
+این پروژه وب‌سایت رسمی آژانس دیجیتال مارکتینگ و توسعه نرم‌افزار EXTIM است که با استفاده از پیشرفته‌ترین تکنولوژی‌های وب ساخته شده است.
 
-First, run the development server:
+## تکنولوژی‌های استفاده شده
+- **فریم‌ورک:** Next.js 15 (App Router)
+- **زبان برنامه‌نویسی:** TypeScript
+- **دیتابیس:** Prisma ORM
+- **طراحی و استایل:** Vanilla CSS (Glassmorphism & CSS Modules) + Framer Motion (انیمیشن‌ها)
+- **تولید تصاویر داینامیک:** `next/og`
 
+## مستندات بهینه‌سازی‌ها (Changelog)
+
+### سئو و متادیتا (SEO & Metadata)
+- پیاده‌سازی متادیتای مرکزی (`layout.tsx`) شامل `openGraph` و `twitter` کارت‌ها.
+- اضافه شدن فایل `robots.txt` و `sitemap.ts` (نقشه سایت داینامیک متصل به دیتابیس برای ایندکس سریع مقالات و نمونه‌کارها).
+- استفاده از `JSON-LD Schema` (نوع Organization برای صفحه اصلی، Article برای مقالات، CreativeWork برای نمونه‌کارها، و Service + Breadcrumb برای صفحات خدمات).
+- ایجاد قابلیت **Dynamic OpenGraph Images** (`next/og`) برای تولید خودکار عکس کاور شبکه‌های اجتماعی برای هر مقاله.
+
+### بهینه‌سازی سرعت و عملکرد (Performance & CWV)
+- مهاجرت از لود فونت به روش سنتی (`@import`) به سیستم هوشمند `next/font/google` (جلوگیری از Layout Shift و افزایش سرعت LCP).
+- بهینه‌سازی تصاویر با ویژگی `sizes` در `next/image` جهت کاهش حجم دانلود در موبایل.
+- ساختار اپلیکیشن وب پیشرونده PWA (`manifest.ts`).
+
+### طراحی واکنش‌گرا (Responsive Design)
+- طراحی سیستم فاصله‌گذاری داینامیک (`.section-padding`, `.container-padding` و...) در `globals.css` با استفاده از مدیا کوئری‌ها.
+- سازگاری کامل Navbar و منوی کشویی، Footer، و Layout صفحه اصلی با تمامی ابعاد موبایل و تبلت.
+- حذف استایل‌های خطی (`inline-styles`) ثابت و تبدیل آن‌ها به کلاس‌های ریسپانسیو.
+
+## راه‌اندازی پروژه
+
+ابتدا پیش‌نیازها را نصب کنید:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+سپس سرور توسعه را اجرا کنید:
+```bash
+npm run dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+وب‌سایت در آدرس [http://localhost:3000](http://localhost:3000) در دسترس خواهد بود.

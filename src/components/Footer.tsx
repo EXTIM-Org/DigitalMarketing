@@ -3,7 +3,7 @@ import Link from 'next/link';
 export default function Footer() {
   return (
     <footer className="glass-panel" style={{ marginTop: 'auto', borderRadius: '0', borderBottom: 'none', borderLeft: 'none', borderRight: 'none' }}>
-      <div style={{ maxWidth: '1200px', margin: '0 auto', padding: '4rem 2rem' }}>
+      <div className="section-padding" style={{ maxWidth: '1200px', margin: '0 auto' }}>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '3rem', marginBottom: '3rem' }}>
           
           {/* Brand Column */}
